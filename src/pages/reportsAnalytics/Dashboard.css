@@ -1,0 +1,6 @@
+.style-container-override .col-md-3,
+.style-container-override .col-sm-6,
+.style-container-override .col-12 { 
+  width: 100% !important; 
+  max-width: 100% !important; 
+}

@@ -1,0 +1,23 @@
+.record-container { padding: 16px; }
+.record-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.record-section { margin-top:12px; }
+.record-section h6 { margin-bottom:8px; }
+
+.card.record-section { border: 1px solid #e9ecef; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+.card.record-section .card-body { padding: 12px; }
+.record-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.detail-row { margin-bottom: 6px; }
+
+/* Card and notes styling for single record */
+.record-card { border: 1px solid #e6eef6; box-shadow: 0 2px 6px rgba(2,6,23,0.06); }
+.record-card .card-body { padding: 16px; }
+.record-grid .field { background: transparent; padding: 6px 8px; border-radius: 4px; }
+.notes-box { margin-top: 6px; }
+
+/* Wrap helper (in case RecordsTable.css isn't loaded) */
+.wrap-text { white-space: pre-wrap; word-break: break-word; overflow-wrap: anywhere; max-height: 18rem; overflow: auto; padding: 6px 8px; background: #fafafa; border-radius: 4px; border: 1px solid rgba(0,0,0,0.04); }
+
+@media (max-width: 768px) {
+	.record-grid { grid-template-columns: 1fr; }
+}
+

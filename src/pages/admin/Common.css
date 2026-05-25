@@ -1,0 +1,117 @@
+/* SHARED VARIABLES & RESET */
+:root {
+  --primary-color: #1e4d8b;
+  --primary-dark: #153a66;
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --success-color: #198754;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-header h1 {
+  font-size: 2.25rem;
+  margin: 0;
+  color: var(--neutral-700);
+}
+
+/* SHARED CARDS */
+.section-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(30, 77, 139, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+/* SHARED TABLES */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-custom th,
+.table-custom td {
+  padding: 0.95rem 1rem;
+  border-bottom: 1px solid rgba(30, 77, 139, 0.08);
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.table-custom th {
+  color: var(--neutral-600);
+  font-weight: 600;
+  background-color: var(--neutral-50);
+}
+
+/* STATUS BADGES */
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-approved {
+  background-color: rgba(25, 135, 84, 0.12);
+  color: var(--success-color);
+}
+
+.badge-pending {
+  background-color: rgba(255, 193, 7, 0.15);
+  color: var(--warning-color);
+}
+
+.badge-rejected {
+  background-color: rgba(220, 53, 69, 0.12);
+  color: var(--danger-color);
+}
+
+/* BUTTONS */
+.btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.btn-outline {
+  border: 1px solid rgba(30, 77, 139, 0.15);
+  background: transparent;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: var(--neutral-50);
+}

@@ -1,0 +1,18 @@
+.audit-container { padding: 16px; }
+.audit-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.audit-section { margin-top:12px; }
+.audit-section h6 { margin-bottom:8px; }
+
+/* Card layout */
+.audit-card { border: 1px solid #e6eef6; box-shadow: 0 2px 6px rgba(2,6,23,0.06); }
+.audit-card .card-body { padding: 16px; }
+.audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.field { padding: 6px 8px; }
+.notes-box { margin-top: 6px; }
+
+/* Wrap helper in-case shared css is not loaded */
+.wrap-text { white-space: pre-wrap; word-break: break-word; overflow-wrap: anywhere; max-height: 18rem; overflow: auto; padding: 6px 8px; background: #fafafa; border-radius: 4px; border: 1px solid rgba(0,0,0,0.04); }
+
+@media (max-width: 768px) {
+	.audit-grid { grid-template-columns: 1fr; }
+}

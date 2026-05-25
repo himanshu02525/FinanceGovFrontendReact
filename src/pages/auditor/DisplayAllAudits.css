@@ -1,0 +1,25 @@
+.action-td { 
+	white-space: normal; 
+	display: flex; 
+	gap: 0.5rem; 
+	justify-content: center; 
+	align-items: center; 
+	flex-wrap: wrap;
+}
+.action-td .btn { white-space: normal; }
+.btn-link.view-btn:hover { text-decoration: underline; }
+.btn-outline-primary.edit-btn { border-color: #0d6efd; color: #0d6efd; }
+.btn-outline-primary.edit-btn:hover { background-color: rgba(13,110,253,0.06); }
+.audit-list { padding: 12px; }
+
+@media (max-width: 768px) {
+		.records-table { max-height: 50vh; }
+}
+
+/* Target smaller landscape/portrait devices where width<=999 and height<=700 */
+@media (max-width: 999px) and (max-height: 700px) {
+	.action-td { flex-direction: column; align-items: stretch; }
+	.action-td .btn { width: 100%; }
+	.table td, .table th { padding: 0.4rem; font-size: 0.92rem; }
+	.truncate-cell { -webkit-line-clamp: 2; }
+}
