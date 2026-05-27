@@ -27,27 +27,27 @@ Finance Gov Register is a comprehensive web application designed to manage finan
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Frontend (React/Vite)                     │
-│                    :5173                                      │
+│                    Frontend (React/Vite)                    │
+│                    :5173                                    │
 ├─────────────────────────────────────────────────────────────┤
-│  Pages (Admin, Auditor, Citizen, Financial Officer, etc.)    │
-│         │                                                     │
-│         ├─ Components (Global, Charts, Forms, Tables)        │
-│         └─ API Services (axiosInstance → Backend)            │
-├─────────────────────────────────────────────────────────────┤
-│              API Interceptor & Error Handling                │
+│  Pages (Admin, Auditor, Citizen, Financial Officer, etc.)   │
+│         │                                                   │
+│         ├─ Components (Global, Charts, Forms, Tables)       |
+│         └─ API Services (axiosInstance → Backend)           │
+├─────────────────────────────────────────────────────────────┤s
+│              API Interceptor & Error Handling               │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                 API Gateway / Backend                         │
-│                    :8000/api                                  │
+│                 API Gateway / Backend                       │
+│                    :8000/api                                │
 ├─────────────────────────────────────────────────────────────┤
-│  • Program Service (CRUD, Budget, Status)                     │
-│  • Compliance Service (Subsidy, Tax, Funding)                 │
-│  • Audit Service (Audit Logs, Summary)                        │
-│  • Citizen Service (Applications, Profile)                    │
-│  • Reports & Analytics Service                                │
-│  • Resource Allocation Service                                │
+│  • Program Service (CRUD, Budget, Status)                   │
+│  • Compliance Service (Subsidy, Tax, Funding)               │
+│  • Audit Service (Audit Logs, Summary)                      │
+│  • Citizen Service (Applications, Profile)                  │
+│  • Reports & Analytics Service                              │
+│  • Resource Allocation Service                              │
 └─────────────────────────────────────────────────────────────┘
 ```
 
